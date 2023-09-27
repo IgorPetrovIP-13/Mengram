@@ -1,0 +1,110 @@
+.mainWin {
+    position: relative;
+    padding: 4rem 2rem;
+    display: flex;
+    width: 35vw;
+    height: 35vw;
+    flex-direction: column;
+    align-items: center;
+    background-color: #262626;
+    transition: filter .3s ease-in-out;
+    border-radius: 1rem;
+    font-family: 'Montserrat';
+    justify-content: center;
+    .heading {
+        position: absolute;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.1rem;
+        text-transform: uppercase;
+    }
+    .dragImage {
+        width: 5rem;
+        height: 5rem;
+        filter: brightness(0) invert(1);
+        margin-top: 4rem;
+    }
+    .dragText {
+        margin-top: 0.5rem;
+    }
+    .fileInput {
+        display: none;
+    }
+    .chooseBtn {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        font-family: 'Montserrat';
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        color: white;
+        background-color: #008ce7;
+        padding: 0.5rem 1rem;
+        border-radius: 1.5rem;
+        margin-top: 2rem;
+        :hover {
+            background-color: #0573bd
+        }
+    }
+
+    .imageWrapper {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        img {
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover;
+        }
+    }
+
+    .backBtn {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0.7rem;
+        left: 2rem;
+        font-size: 1rem;
+        color: white;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+        padding: 0;
+    }
+}
+
+.denyWin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #262626;
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 20vw;
+    h3 {
+        padding-top: 1rem;
+    }
+    p {
+        color: rgb(146, 145, 145);
+        padding: 0.5rem 0 1rem;
+        font-size: 0.8rem;
+    }
+    button {
+        cursor: pointer;
+        border: 0;
+        border-top: 1px solid #383838;
+        height: 3rem;
+        font-family: inherit;
+        color: inherit;
+        background-color: transparent;
+        width: 100%;
+        font-size: 1rem;
+    }
+    .redBtn {
+        font-weight: 700;
+        color: red;
+    }
+}

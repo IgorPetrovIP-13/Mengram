@@ -1,0 +1,31 @@
+@import '../../cmpStyles/variables.scss'; 
+
+.header {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    float: right;
+    border-right: 1px solid $post-border-color;
+    padding: 2rem 0 2rem 1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    a {
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .logo {
+        padding-bottom: 2rem;
+    }
+    .logo:active {
+        filter: brightness(0) saturate(100%) invert(68%) sepia(4%) saturate(19%) hue-rotate(319deg) brightness(90%) contrast(92%);
+    }
+}
+
+svg {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
