@@ -5,7 +5,7 @@ interface HomeProps {
   style?: CSSProperties;
 }
 
-function Home({ fill = 'currentColor', style = {} }: HomeProps): ReactElement {
+function Home({ fill = 'black', style = {} }: HomeProps): ReactElement {
   return (
     <svg
       style={style}

@@ -1,5 +1,5 @@
 import Plus from "./Actions/Plus"
-import Search from "./Actions/Seach"
+import Search from "./Actions/Search"
 import Home from "./Actions/Home"
 import styles from "./IHeader.module.scss"
 import HeaderButton from "./HeaderButton/HeaderButton"
