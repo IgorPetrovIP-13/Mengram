@@ -1,4 +1,4 @@
-import {ReactElement} from "react";
+import {ReactElement} from "react"
 
 interface SearchProps {
     fill?: string
@@ -21,4 +21,4 @@ function Search({fill = "black"}: SearchProps): ReactElement {
     )
 }
 
-export default Search;
+export default Search

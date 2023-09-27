@@ -1,4 +1,4 @@
-import {ReactElement, CSSProperties} from 'react';
+import {ReactElement, CSSProperties} from 'react'
 
 interface HomeProps {
     fill?: string;
@@ -25,4 +25,4 @@ function Home({fill = 'black', style = {}}: HomeProps): ReactElement {
     );
 }
 
-export default Home;
+export default Home
