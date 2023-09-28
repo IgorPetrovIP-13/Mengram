@@ -1,4 +1,8 @@
-function Image ({className}) {
+interface ImageProps {
+    className?: string
+};
+
+function Image ({className}: ImageProps) {
     return (
         <svg className={className} width="800px" height="800px" version="1.1" viewBox="144 144 512 512" xmlns="http://www.w3.org/2000/svg">
         <defs>

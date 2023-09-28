@@ -4,7 +4,7 @@ import Home from "./Actions/Home"
 import styles from "./IHeader.module.scss"
 import HeaderButton from "./HeaderButton/HeaderButton"
 import {Link} from 'react-router-dom'
-import AddPost from "../AddPost/AddPost"
+import AddPost from "../AddPost/AddPost.js"
 
 const Header = () => {
 

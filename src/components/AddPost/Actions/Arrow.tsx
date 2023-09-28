@@ -1,4 +1,8 @@
-function Arrow ({fill}) {
+interface ArrowProps {
+    fill?: string
+}
+
+function Arrow ({fill='black'} : ArrowProps) {
     return (
         <svg fill={fill} width="800px" height="800px" version="1.1" viewBox="144 144 512 512" xmlns="http://www.w3.org/2000/svg">
             <g>
