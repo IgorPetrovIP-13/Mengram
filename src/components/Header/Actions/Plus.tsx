@@ -1,4 +1,4 @@
-import {ReactElement} from 'react';
+import {ReactElement} from 'react'
 
 interface PlusProps {
     fill?: string;
@@ -19,4 +19,4 @@ function Plus({fill = 'black'}: PlusProps): ReactElement {
     );
 }
 
-export default Plus;
+export default Plus
