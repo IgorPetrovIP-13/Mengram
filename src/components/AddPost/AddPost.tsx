@@ -1,8 +1,8 @@
 import React, { useState, useRef, DragEvent, ChangeEvent } from "react";
 import ModalWrapper from "../ModalWrapper";
 import styles from './AddPost.module.scss';
-import Image from "./Actions/Image";
-import Arrow from "./Actions/Arrow";
+import Image from "./Icons/Image";
+import Arrow from "./Icons/Arrow";
 
 const AddPost: React.FC = () => {
     const [selectedFile, setSelectedFile] = useState<File | null>(null);
