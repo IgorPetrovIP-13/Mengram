@@ -1,6 +1,6 @@
 import styles from './FeedPost.module.scss'
 import Comment from './Comment/Comment'
-import { useEffect, useState, useMemo } from 'react'
+import { useEffect, useState} from 'react'
 import ContentWrapper from './ContentWrapper/ContentWrapper'
 import { FeedPostContext } from './FeedPostContext'
 import Like from './Icons/Like'
@@ -12,40 +12,17 @@ const FeedPost = ({ postLink }) => {
   const [isLiked, setIsLiked] = useState(false);
   const [isSaved, setIsSaved] = useState(false);
   const [areCommentsOpened, setAreCommentsOpened] = useState(false);
-  const [postContent, setPostContent] = useState({});
-  const [postAuthor, setPostAuthor] = useState(null);
-  const [commentAuthors, setCommentAuthors] = useState({});
-
-//   const postAuthor = useMemo(() => {
-//     const fetchAuthorData = async () => {
-//       const authorId = postContent.authorId;
-//       const response = await fetch('./users.json');
-//       if (response.ok) {
-//         const authorData = await response.json();
-//         return authorData.find((author) => author.id === authorId);
-//       }
-//       return null;
-//     };
-//     return fetchAuthorData();
-//   }, [postContent]);
-
-//   const CommentAuthors = useMemo(() => {
-//     const allComments = postContent.comments || [];
-//     const updatedAuthors = { ...commentAuthors };
-
-//     allComments.forEach((comment) => {
-//       const authorId = comment.authorId;
-//       if (!updatedAuthors[authorId]) {
-//         updatedAuthors[authorId] = {
-//           id: authorId,
-//           comments: [],
-//         };
-//       }
-//       updatedAuthors[authorId].comments.push(comment);
-//     });
-
-//     setCommentAuthors(updatedAuthors);
-//   }, [postContent, commentAuthors]);
+  const [postContent, setPostContent] = useState(
+    {
+      id: 1,
+      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      authorId: 1,
+      media: "https://i.gifer.com/ZKZg.gif",
+      likes: 0,
+      date: new Date().toString(),
+      comments: []
+    }
+  );
 
   useEffect(() => {
     fetchData()
