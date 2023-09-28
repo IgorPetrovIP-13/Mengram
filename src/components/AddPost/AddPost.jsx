@@ -1,4 +1,4 @@
-import ModalWrapper from "../ModalWrapper";
+import ModalWrapper from "../ModalWrapper.js";
 import styles from './AddPost.module.scss';
 import { useState, useRef } from "react";
 import Image from "./Actions/Image";

@@ -7,7 +7,7 @@ import { FeedPostContext } from './FeedPostContext';
 import Like from './Actions/Like';
 import { Comment as ShowComments } from './Actions/Comment';
 import Save from './Actions/Save';
-import ModalWrapper from '../ModalWrapper';
+import ModalWrapper from '../ModalWrapper.js';
 
 const FeedPost = ({ postLink }) => {
   const [isLiked, setIsLiked] = useState(false);
