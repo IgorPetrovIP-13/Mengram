@@ -1,4 +1,4 @@
-import Like from "../Icons/Like";
+import Like from "../Icons/Like.js";
 import PropTypes from 'prop-types';
 import { useEffect, useState } from "react";
 import styles from './ContentWrapper.module.scss';

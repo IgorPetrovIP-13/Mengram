@@ -4,9 +4,9 @@ import Comment from './Comment/Comment';
 import { useEffect, useState, useMemo } from 'react';
 import ContentWrapper from './ContentWrapper/ContentWrapper';
 import { FeedPostContext } from './FeedPostContext';
-import Like from './Icons/Like';
-import { Comment as ShowComments } from './Icons/Comment';
-import Save from './Icons/Save';
+import Like from './Icons/Like.js';
+import { Comment as ShowComments } from './Icons/Comment.js';
+import Save from './Icons/Save.js';
 import ModalWrapper from '../ModalWrapper.js';
 
 const FeedPost = ({ postLink }) => {
