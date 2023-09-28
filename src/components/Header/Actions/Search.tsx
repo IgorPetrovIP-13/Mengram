@@ -1,8 +1,10 @@
+import {ReactElement} from "react";
+
 interface SearchProps {
     fill?: string
 }
 
-function Search({fill} : SearchProps)  {
+function Search({fill="black"} : SearchProps) : ReactElement  {
     return (
         <svg width="800px" height="800px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
     
