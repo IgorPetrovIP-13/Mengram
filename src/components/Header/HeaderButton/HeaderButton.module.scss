@@ -1,7 +1,6 @@
 @import "../../scss/variables.scss";
 
-.mainBtn {
-  font-weight: 400;
+.headerButton {
   cursor: pointer;
   width: 90%;
   border: 1px solid $border-grey;
@@ -9,13 +8,13 @@
   padding: 0 1rem;
   height: 3rem;
   outline: 0;
-  font-family: "Montserrat";
-  color: white;
+  font-family: "Satoshi 400";
+  color: $icon-white;
   display: flex;
   align-items: center;
   background-color: transparent;
   text-transform: capitalize;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   gap: 1rem;
   svg {
     transition: scale 0.2s ease-in-out;
@@ -27,26 +26,26 @@
   }
 }
 
-.mainBtn:active {
-  color: rgb(156, 154, 154);
+.headerButton:active {
+  color: $icon-grey;
   svg {
     filter: brightness(0) saturate(100%) invert(68%) sepia(4%) saturate(19%)
       hue-rotate(319deg) brightness(90%) contrast(92%);
   }
 }
 
-.mainBtn:hover {
+.headerButton:hover {
   svg {
     scale: 1.1;
   }
 }
 
-.mainBtn.active {
-  font-weight: 700;
+.headerButton.active {
+  font-family: "Satoshi 700";
 }
 
 @media screen and (max-width: 1200px) {
-  .mainBtn {
+  .headerButton {
     margin: 0;
     border: none;
     justify-content: center;
