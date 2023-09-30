@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import HeaderButton from "./HeaderButtonWrapper/HeaderButtonWrapper";
+import HeaderButtonWrapper from "./HeaderButtonWrapper/HeaderButtonWrapper";
 
 interface AddPostProps {
   fill?: string;
@@ -15,7 +15,7 @@ function AddPostIcon({
   }
 
   return (
-    <HeaderButton
+    <HeaderButtonWrapper
       text={displayMode === "desktop" ? "Create" : ""}
       func={handleClick}
     >
@@ -45,7 +45,7 @@ function AddPostIcon({
           </g>
         </g>
       </svg>
-    </HeaderButton>
+    </HeaderButtonWrapper>
   );
 }
 

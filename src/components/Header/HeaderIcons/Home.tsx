@@ -1,5 +1,5 @@
 import { ReactElement, CSSProperties } from "react";
-import HeaderButton from "./HeaderButtonWrapper/HeaderButtonWrapper";
+import HeaderButtonWrapper from "./HeaderButtonWrapper/HeaderButtonWrapper";
 import { Link } from "react-router-dom";
 
 interface HomeProps {
@@ -15,7 +15,7 @@ function Home({
 }: HomeProps): ReactElement {
   return (
     <Link to={"/"}>
-      <HeaderButton
+      <HeaderButtonWrapper
         text={displayMode === "desktop" ? "home" : ""}
         func={() => {}}
       >
@@ -34,7 +34,7 @@ function Home({
             fill={fill}
           />
         </svg>
-      </HeaderButton>
+      </HeaderButtonWrapper>
     </Link>
   );
 }
