@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import HeaderButton from "./HeaderButton/HeaderButton";
+import HeaderButton from "../HeaderButton/HeaderButton";
 
 interface SearchProps {
   fill?: string;

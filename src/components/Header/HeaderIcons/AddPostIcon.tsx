@@ -1,12 +1,12 @@
 import { ReactElement } from "react";
-import HeaderButton from "./HeaderButton/HeaderButton";
+import HeaderButton from "../HeaderButton/HeaderButton";
 
 interface AddPostProps {
   fill?: string;
   displayMode?: "desktop" | "laptop" | "phone";
 }
 
-function AddPost({
+function AddPostIcon({
   fill = "white",
   displayMode = "desktop",
 }: AddPostProps): ReactElement {
@@ -49,4 +49,4 @@ function AddPost({
   );
 }
 
-export default AddPost;
+export default AddPostIcon;
