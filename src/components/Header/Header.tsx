@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Plus from "./Icons/AddPost.tsx";
 import Search from "./Icons/Search.tsx";
 import Home from "./Icons/Home.tsx";
 import styles from "./IHeader.module.scss";
-import HeaderButton from "./HeaderButton/HeaderButton.tsx";
 import { Link } from "react-router-dom";
+import AddPost from "./Icons/AddPost.tsx";
 
 enum DisplayMode {
   Desktop = "desktop",
@@ -53,33 +52,9 @@ const Header: React.FC = () => {
           alt="Mengram"
         />
       </Link>
-      <Link to={"/"}>
-        <HeaderButton
-          text={displayMode === "desktop" ? "home" : ""}
-          func={() => {}}
-        >
-          <Home
-            fill={"white"}
-            style={{
-              width: "30px",
-              height: "30px",
-              marginRight: displayMode === "desktop" ? "-6px" : "0",
-            }}
-          />
-        </HeaderButton>
-      </Link>
-      <HeaderButton
-        text={displayMode === "desktop" ? "search" : ""}
-        func={() => {}}
-      >
-        <Search fill={"white"} />
-      </HeaderButton>
-      <HeaderButton
-        text={displayMode === "desktop" ? "create" : ""}
-        func={() => {}}
-      >
-        <Plus fill={"white"} />
-      </HeaderButton>
+      <Home displayMode={displayMode} />
+      <Search displayMode={displayMode} />
+      <AddPost />
     </header>
   );
 };
