@@ -1,5 +1,5 @@
 import { ReactNode, useState, FC } from "react";
-import styles from "./HeaderButton.module.scss";
+import styles from "./HeaderButtonWrapper.module.scss";
 
 interface HeaderButtonProps {
   children: ReactNode;
@@ -7,7 +7,11 @@ interface HeaderButtonProps {
   text: string;
 }
 
-const HeaderButton: FC<HeaderButtonProps> = ({ children, func, text }) => {
+const HeaderButtonWrapper: FC<HeaderButtonProps> = ({
+  children,
+  func,
+  text,
+}) => {
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = () => {
@@ -26,4 +30,4 @@ const HeaderButton: FC<HeaderButtonProps> = ({ children, func, text }) => {
   );
 };
 
-export default HeaderButton;
+export default HeaderButtonWrapper;

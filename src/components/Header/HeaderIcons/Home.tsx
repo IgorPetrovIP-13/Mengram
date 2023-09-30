@@ -1,5 +1,5 @@
 import { ReactElement, CSSProperties } from "react";
-import HeaderButton from "../HeaderButton/HeaderButton";
+import HeaderButton from "./HeaderButtonWrapper/HeaderButtonWrapper";
 import { Link } from "react-router-dom";
 
 interface HomeProps {

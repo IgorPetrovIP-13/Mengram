@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import HeaderButton from "../HeaderButton/HeaderButton";
+import HeaderButton from "./HeaderButtonWrapper/HeaderButtonWrapper";
 
 interface AddPostProps {
   fill?: string;
