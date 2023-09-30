@@ -18,7 +18,16 @@
 
   .logo {
     padding-bottom: 2rem;
+
+    .logoIconDesktop {
+      width: 90%;
+    }
+
+    .logoIcon {
+      display: none;
+    }
   }
+
   .logo:active {
     filter: brightness(0) saturate(100%) invert(68%) sepia(4%) saturate(19%)
       hue-rotate(319deg) brightness(90%) contrast(92%);
@@ -30,18 +39,43 @@ svg {
   height: 1.8rem;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: $breakpoint-lg) {
   .header {
     padding: 0;
     align-items: center;
     width: 100px;
 
+    span {
+      display: none;
+    }
+
     .logo {
       margin-top: 40px;
       width: 50px;
-      img {
-        width: 100%;
+
+      .logoIconDesktop {
+        display: none;
       }
+
+      .logoIcon {
+        display: block;
+        width: 48px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+  .header {
+    height: 90px;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+
+    .logo {
+      display: none;
     }
   }
 }

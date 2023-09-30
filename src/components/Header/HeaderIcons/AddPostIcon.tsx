@@ -6,7 +6,7 @@ interface AddPostProps {
   displayMode?: "desktop" | "laptop" | "phone";
 }
 
-function AddPost({
+function AddPostIcon({
   fill = "white",
   displayMode = "desktop",
 }: AddPostProps): ReactElement {
@@ -49,4 +49,4 @@ function AddPost({
   );
 }
 
-export default AddPost;
+export default AddPostIcon;

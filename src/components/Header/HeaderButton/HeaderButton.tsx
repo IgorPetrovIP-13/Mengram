@@ -17,7 +17,7 @@ const HeaderButton: FC<HeaderButtonProps> = ({ children, func, text }) => {
 
   return (
     <button
-      className={`${styles.mainBtn} ${isActive ? "active" : ""}`}
+      className={`${styles.headerButton} ${isActive ? "active" : ""}`}
       onClick={handleClick}
     >
       {children}
