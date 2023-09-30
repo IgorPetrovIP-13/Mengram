@@ -1,10 +1,10 @@
-@import "../../../cmpStyles/variables.scss";
+@import "../../../scss/variables.scss";
 
 .mainBtn {
   font-weight: 400;
   cursor: pointer;
   width: 90%;
-  border: 1px solid $post-border-color;
+  border: 1px solid $border-grey;
   border-radius: 1.4rem;
   padding: 0 1rem;
   height: 3rem;
