@@ -54,7 +54,7 @@ const Header: React.FC = () => {
       </Link>
       <Home displayMode={displayMode} />
       <Search displayMode={displayMode} />
-      <AddPost />
+      <AddPost displayMode={displayMode} />
     </header>
   );
 };

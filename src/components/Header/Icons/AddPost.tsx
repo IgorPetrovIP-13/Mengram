@@ -3,15 +3,22 @@ import HeaderButton from "../HeaderButton/HeaderButton";
 
 interface AddPostProps {
   fill?: string;
+  displayMode?: "desktop" | "laptop" | "phone";
 }
 
-function AddPost({ fill = "white" }: AddPostProps): ReactElement {
+function AddPost({
+  fill = "white",
+  displayMode = "desktop",
+}: AddPostProps): ReactElement {
   function handleClick() {
     console.log("AddPost");
   }
 
   return (
-    <HeaderButton text="Create" func={handleClick}>
+    <HeaderButton
+      text={displayMode === "desktop" ? "Create" : ""}
+      func={handleClick}
+    >
       <svg
         width="800px"
         height="800px"
