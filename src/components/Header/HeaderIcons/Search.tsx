@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import HeaderButton from "../HeaderButton/HeaderButton";
+import HeaderButtonWrapper from "./HeaderButtonWrapper/HeaderButtonWrapper";
 
 interface SearchProps {
   fill?: string;
@@ -11,7 +11,7 @@ function Search({
   displayMode = "desktop",
 }: SearchProps): ReactElement {
   return (
-    <HeaderButton
+    <HeaderButtonWrapper
       text={displayMode === "desktop" ? "search" : ""}
       func={() => {}}
     >
@@ -41,7 +41,7 @@ function Search({
           </g>
         </g>
       </svg>
-    </HeaderButton>
+    </HeaderButtonWrapper>
   );
 }
 
