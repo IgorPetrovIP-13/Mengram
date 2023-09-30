@@ -1,4 +1,4 @@
-@import '../../../cmpStyles/variables';
+@import "../../scss/variables.scss";
 
 .contentWrapper {
     box-sizing: border-box;
@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     padding: 1.5rem;
-    border: 1px solid $post-border-color;
+    border: 1px solid $border-grey;
     border-radius: 3px;
     overflow: hidden;
     width: 100%;
