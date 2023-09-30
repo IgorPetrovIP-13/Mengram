@@ -131,6 +131,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+a,
+button {
+  cursor: pointer;
+}
 :root {
   /* colors */
 
@@ -140,6 +144,8 @@ table {
 
   // background
   $background-black: #000000;
+  $background-grey: #262626;
+  $background-white: #f5f5f5;
 
   //text
   $text-white: #f5f5f5;
@@ -155,7 +161,8 @@ table {
 
   //buttons
   $button-blue: #0095f6;
-  $botton-dark-blue: #1877f2;
+  $button-dark-blue: #1877f2;
+  $button-red: #ed4956;
 
   /* breakpoints */
 

@@ -1,40 +1,39 @@
 .commentForm {
+  width: 100%;
+  display: flex;
+  font-family: "Satoshi 400";
+  margin-top: 1rem;
+  .textAreaWrapper {
+    position: relative;
     width: 100%;
-    display: flex;
-    font-family: 'Montserrat';
-    margin-top: 1rem;
-    .textAreaWrapper {
-        position: relative;
-        width: 100%;
-        margin-right: 1rem;
-        .commentInput {
-            color: white;
-            padding: 0.1rem;
-            background-color: transparent;
-            outline: 0;
-            border: 0;
-            resize: none;
-            width: 100%;
-            position: relative;
-        }
-        .textCounter {
-            font-size: 12px;
-            position: absolute;
-            bottom: -0.7rem;
-            right: 0
-        }
+    margin-right: 1rem;
+    .commentInput {
+      color: $text-white;
+      padding: 0.1rem;
+      background-color: transparent;
+      outline: 0;
+      border: 0;
+      resize: none;
+      width: 100%;
+      position: relative;
     }
-    .submitButton {
-        cursor: pointer;
-        background-color: transparent;
-        outline: 0;
-        border: 0;
-        color: #008ce7;
-        text-transform: capitalize;
-        font-weight: 700;
+    .textCounter {
+      font-size: 12px;
+      position: absolute;
+      bottom: -0.7rem;
+      right: 0;
     }
-    .submitButton:hover {
-        color: white;
-    }
+  }
+  .submitButton {
+    font-family: "Satoshi 700";
+    cursor: pointer;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    color: $text-blue;
+    text-transform: capitalize;
+  }
+  .submitButton:hover {
+    color: $text-light-blue;
+  }
 }
-
