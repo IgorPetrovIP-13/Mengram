@@ -1,16 +1,16 @@
-@import "../../../cmpStyles/variables.scss";
+@import "../../scss/variables.scss";
 
 .mainBtn {
   font-weight: 400;
   cursor: pointer;
   width: 90%;
-  border: 1px solid $post-border-color;
+  border: 1px solid $border-grey;
   border-radius: 1.4rem;
   padding: 0 1rem;
   height: 3rem;
   outline: 0;
-  font-family: "Montserrat";
-  color: white;
+  font-family: "Satoshi 400";
+  color: $text-white;
   display: flex;
   align-items: center;
   background-color: transparent;
@@ -28,7 +28,7 @@
 }
 
 .mainBtn:active {
-  color: rgb(156, 154, 154);
+  color: $text-grey;
   svg {
     filter: brightness(0) saturate(100%) invert(68%) sepia(4%) saturate(19%)
       hue-rotate(319deg) brightness(90%) contrast(92%);
@@ -42,7 +42,7 @@
 }
 
 .mainBtn.active {
-  font-weight: 700;
+  font-family: "Satoshi 700";
 }
 
 @media screen and (max-width: 1200px) {

@@ -1,11 +1,11 @@
-@import "../../cmpStyles/variables.scss";
+@import "../scss/variables.scss";
 
 .header {
   width: 300px;
   height: 100vh;
   position: fixed;
   float: right;
-  border-right: 1px solid $post-border-color;
+  border-right: 1px solid $border-grey;
   padding: 2rem 0 2rem 1rem;
   display: flex;
   justify-content: flex-start;
