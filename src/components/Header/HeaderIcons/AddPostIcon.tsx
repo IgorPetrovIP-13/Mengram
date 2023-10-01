@@ -1,7 +1,4 @@
 import { ReactElement } from "react";
-<<<<<<< HEAD
-import HeaderButtonWrapper from "./HeaderButtonWrapper/HeaderButtonWrapper";
-=======
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { RootState } from "../../../storage/store";
@@ -9,16 +6,15 @@ import { AppDispatch } from "../../../storage/store";
 import { toggleAddPost } from "../../../reducers/modalsReducer";
 import HeaderButtonWrapper from "./HeaderButtonWrapper/HeaderButtonWrapper";
 import AddPost from "../../AddPost/AddPost";
->>>>>>> development
 
 interface AddPostProps {
   fill?: string;
 }
 
-function AddPostIcon({
-  fill = "white",
-}: AddPostProps): ReactElement {
-  const isAddPostOpened = useSelector((state: RootState) => state.modals.isAddPostOpened);
+function AddPostIcon({ fill = "white" }: AddPostProps): ReactElement {
+  const isAddPostOpened = useSelector(
+    (state: RootState) => state.modals.isAddPostOpened
+  );
   const dispatch = useDispatch<AppDispatch>();
 
   function handleClick() {
@@ -26,24 +22,8 @@ function AddPostIcon({
   }
 
   return (
-<<<<<<< HEAD
-    <HeaderButtonWrapper
-      text={displayMode === "desktop" ? "Create" : ""}
-      func={handleClick}
-    >
-      <svg
-        width="800px"
-        height="800px"
-        viewBox="0 0 32 32"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-=======
     <>
-      <HeaderButtonWrapper
-        text={"Create"}
-        func={handleClick}
->>>>>>> development
-      >
+      <HeaderButtonWrapper text={"Create"} func={handleClick}>
         <svg
           width="800px"
           height="800px"
@@ -69,16 +49,10 @@ function AddPostIcon({
               />
             </g>
           </g>
-<<<<<<< HEAD
-        </g>
-      </svg>
-    </HeaderButtonWrapper>
-=======
         </svg>
       </HeaderButtonWrapper>
-      {isAddPostOpened && <AddPost/>}
+      {isAddPostOpened && <AddPost />}
     </>
->>>>>>> development
   );
 }
 
