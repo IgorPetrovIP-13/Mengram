@@ -1,14 +1,17 @@
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
+import { NotFoundPage } from "./pages/NotFoundPage/NotFoundPage";
 
 function App() {
   return (
-    <>
+    <div className="container">
       <Header />
-      <Routes>
-        <Route path="*" />
-      </Routes>
-    </>
+      <div className="content">
+        <Routes>
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </div>
+    </div>
   );
 }
 

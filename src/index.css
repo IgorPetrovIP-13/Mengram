@@ -136,6 +136,15 @@ body {
   color: #f5f5f5;
 }
 
+.container {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  height: 100%;
+}
+
 @font-face {
   font-family: "Satoshi 400";
   font-style: normal;
@@ -143,7 +152,6 @@ body {
   src: local("Satoshi-Regular"),
     url("./assets/fonts/Satoshi/Satoshi-Regular.woff") format("woff");
 }
-
 
 @font-face {
   font-family: "Satoshi 500";
@@ -153,7 +161,6 @@ body {
     url("./assets/fonts/Satoshi/Satoshi-Medium.woff") format("woff");
 }
 
-
 @font-face {
   font-family: "Satoshi 700";
   font-style: normal;
@@ -162,7 +169,6 @@ body {
   src: local("Satoshi-Bold"),
     url("./assets/fonts/Satoshi/Satoshi-Bold.woff") format("woff");
 }
-
 
 ::-webkit-scrollbar {
   width: 7px;

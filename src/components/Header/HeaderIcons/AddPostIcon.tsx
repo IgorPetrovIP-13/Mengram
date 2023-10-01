@@ -11,10 +11,10 @@ interface AddPostProps {
   fill?: string;
 }
 
-function AddPostIcon({
-  fill = "white",
-}: AddPostProps): ReactElement {
-  const isAddPostOpened = useSelector((state: RootState) => state.modals.isAddPostOpened);
+function AddPostIcon({ fill = "white" }: AddPostProps): ReactElement {
+  const isAddPostOpened = useSelector(
+    (state: RootState) => state.modals.isAddPostOpened
+  );
   const dispatch = useDispatch<AppDispatch>();
 
   function handleClick() {
@@ -23,10 +23,7 @@ function AddPostIcon({
 
   return (
     <>
-      <HeaderButtonWrapper
-        text={"Create"}
-        func={handleClick}
-      >
+      <HeaderButtonWrapper text={"Create"} func={handleClick}>
         <svg
           width="800px"
           height="800px"
@@ -54,7 +51,7 @@ function AddPostIcon({
           </g>
         </svg>
       </HeaderButtonWrapper>
-      {isAddPostOpened && <AddPost/>}
+      {isAddPostOpened && <AddPost />}
     </>
   );
 }

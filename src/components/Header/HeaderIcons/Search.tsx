@@ -5,14 +5,9 @@ interface SearchProps {
   fill?: string;
 }
 
-function Search({
-  fill = "white",
-}: SearchProps): ReactElement {
+function Search({ fill = "white" }: SearchProps): ReactElement {
   return (
-    <HeaderButtonWrapper
-      text={"search"}
-      func={() => {}}
-    >
+    <HeaderButtonWrapper text={"search"} func={() => {}}>
       <svg
         width="800px"
         height="800px"
