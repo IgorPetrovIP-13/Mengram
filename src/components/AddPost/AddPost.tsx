@@ -1,4 +1,7 @@
 import React, { useState, useRef, DragEvent, ChangeEvent } from "react";
+import { useDispatch } from "react-redux";
+import { AppDispatch } from "../../storage/store";
+import { toggleAddPost } from "../../reducers/modalsReducer";
 import ModalWrapper from "../ModalWrapper";
 import styles from './AddPost.module.scss';
 import Image from "./Icons/Image";
@@ -9,6 +12,7 @@ const AddPost: React.FC = () => {
     const [isDenyOpened, setIsDenyOpened] = useState<boolean>(false);
     const mainWin = useRef<HTMLDivElement | null>(null);
     const fileInput = useRef<HTMLInputElement | null>(null);
+    const dispatch = useDispatch<AppDispatch>();
 
     const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
         event.preventDefault();
@@ -54,10 +58,7 @@ const AddPost: React.FC = () => {
     }
 
     const closeFunc = () => {
-        // Тут можешь реализовать закрытие модального окна как хочешь
-        // Например, передать пропсом из родительского компонента
-        // и вызывать его в этой функции
-        console.log('Modal close function');
+        dispatch(toggleAddPost());
     }
 
     return (
