@@ -1,0 +1,102 @@
+@import "../../components/scss/variables.scss";
+
+.notFoundPage {
+  font-family: "Satoshi 700";
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10vh 15px 0;
+
+  h1 {
+    color: $text-red;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  img {
+    max-width: 600px;
+    height: auto;
+  }
+
+  button {
+    margin-top: 50px;
+    height: 45px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    background: $button-red;
+    border-radius: 50px;
+    box-shadow: $button-red 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: $text-white;
+    cursor: pointer;
+    font-family: "Satoshi 400";
+    font-size: 1.4rem;
+    opacity: 1;
+    outline: 0 solid transparent;
+    width: 190px;
+    border: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+  }
+
+  button:hover {
+    background: lighten($button-red, 2%);
+    transform: scale(1.05);
+    box-shadow: $button-red 0 15px 30px -10px;
+  }
+
+  button:active {
+    transform: scale(0.98);
+  }
+}
+
+@media screen and (max-width: $breakpoint-lg) {
+  .notFoundPage {
+    h1 {
+      font-size: 4.5rem;
+      margin-bottom: 1.2rem;
+    }
+
+    h2 {
+      font-size: 2.3rem;
+      margin-bottom: 2.1rem;
+    }
+
+    img {
+      max-width: 500px;
+      height: auto;
+    }
+
+    button {
+      width: 170px;
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+  .notFoundPage {
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    img {
+      max-width: 450px;
+      height: auto;
+    }
+
+    button {
+      width: 160px;
+    }
+  }
+}
