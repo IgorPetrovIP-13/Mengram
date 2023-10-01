@@ -3,16 +3,14 @@ import HeaderButtonWrapper from "./HeaderButtonWrapper/HeaderButtonWrapper";
 
 interface SearchProps {
   fill?: string;
-  displayMode?: "desktop" | "laptop" | "phone";
 }
 
 function Search({
   fill = "white",
-  displayMode = "desktop",
 }: SearchProps): ReactElement {
   return (
     <HeaderButtonWrapper
-      text={displayMode === "desktop" ? "search" : ""}
+      text={"search"}
       func={() => {}}
     >
       <svg
