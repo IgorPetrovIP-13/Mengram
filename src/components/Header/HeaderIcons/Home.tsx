@@ -5,18 +5,20 @@ import { Link } from "react-router-dom";
 interface HomeProps {
   fill?: string;
   style?: CSSProperties;
-  displayMode?: "desktop" | "laptop" | "phone";
 }
 
 function Home({
   fill = "white",
   style = {},
-  displayMode = "desktop",
 }: HomeProps): ReactElement {
   return (
     <Link to={"/"}>
       <HeaderButtonWrapper
+<<<<<<< HEAD
         text={displayMode === "desktop" ? "home" : ""}
+=======
+        text={"home"}
+>>>>>>> development
         func={() => {}}
       >
         <svg
