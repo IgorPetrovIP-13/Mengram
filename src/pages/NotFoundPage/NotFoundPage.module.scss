@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 10vh 15px 0;
+  padding: 5vh 15px 0;
 
   h1 {
     color: $text-red;
@@ -19,7 +19,7 @@
   }
 
   img {
-    max-width: 600px;
+    max-width: 100%;
     height: auto;
   }
 
@@ -67,11 +67,6 @@
       margin-bottom: 2.1rem;
     }
 
-    img {
-      max-width: 500px;
-      height: auto;
-    }
-
     button {
       width: 170px;
     }
@@ -88,11 +83,6 @@
     h2 {
       font-size: 2rem;
       margin-bottom: 2rem;
-    }
-
-    img {
-      max-width: 450px;
-      height: auto;
     }
 
     button {
