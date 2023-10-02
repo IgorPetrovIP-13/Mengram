@@ -1,8 +1,9 @@
-import Search from "./HeaderIcons/Search.tsx";
-import Home from "./HeaderIcons/Home.tsx";
+import Search from "./HeaderButtons/Search.tsx";
+import Home from "./HeaderButtons/Home.tsx";
 import styles from "./IHeader.module.scss";
 import { Link } from "react-router-dom";
-import AddPostIcon from "./HeaderIcons/AddPostIcon.tsx";
+import AddPostIcon from "./HeaderButtons/AddPostIcon.tsx";
+import Profile from "./HeaderButtons/Profile/Profile.tsx";
 
 const Header: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const Header: React.FC = () => {
       <Home />
       <Search />
       <AddPostIcon />
+      <Profile />
     </header>
   );
 };
