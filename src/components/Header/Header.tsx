@@ -1,8 +1,8 @@
-import Search from "./HeaderIcons/Search.tsx";
-import Home from "./HeaderIcons/Home.tsx";
+import Search from "./HeaderButtons/Search.tsx";
+import Home from "./HeaderButtons/Home.tsx";
 import styles from "./IHeader.module.scss";
 import { Link } from "react-router-dom";
-import AddPostIcon from "./HeaderIcons/AddPostIcon.tsx";
+import AddPostIcon from "./HeaderButtons/AddPostIcon.tsx";
 
 const Header: React.FC = () => {
   return (
